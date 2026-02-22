@@ -18,7 +18,7 @@ public class OOPSBannerApp{
 
         
         for (String[] row : pattern) {
-            System.out.println(String.join("   ", row));
+            System.out.println(String.join("  ", row));
         }
     }
 }
