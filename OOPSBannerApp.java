@@ -1,16 +1,24 @@
-public class PatternPrint {
-	
+
+public class OOPSBannerApp{
+
     public static void main(String[] args) {
 
-        System.out.println("    ***        ***        ******         *****   ");
-        System.out.println("  **   **    **   **      **    **      **    ** ");
-        System.out.println(" **     **  **     **     **    **     **      ** ");
-        System.out.println(" **     **  **     **     **    **      **       ");
-        System.out.println(" **     **  **     **     *******         ***    ");
-        System.out.println(" **     **  **     **     **                 **  ");
-        System.out.println(" **     **  **     **     **          **      ** ");
-        System.out.println("  **   **    **   **      **           **     **  ");
-        System.out.println("    ***        ***        **             *****    ");
+        String[][] pattern = {
+			{"    ***        ***        ******         *****    "},
+			{"  **   **    **   **      **    **      **    **  "},
+			{" **     **  **     **     **    **     **      ** "},
+			{" **     **  **     **     **    **      **        "},
+			{" **     **  **     **     *******         ***     "},
+			{" **     **  **     **     **                 **   "},
+			{" **     **  **     **     **          **      **  "},
+			{"  **   **    **   **      **           **     **  "},
+			{"    ***        ***        **             *****    "},
+            
+        };
 
+        
+        for (String[] row : pattern) {
+            System.out.println(String.join("   ", row));
+        }
     }
 }
